@@ -1,5 +1,0 @@
-export { PartnersStep } from './partners'
-export { UnprotectedSexStep } from './unprotected-sex'
-export { RecentHIVExpositionStep } from './recent-hiv-exposition'
-export { LastMonthHIVExpositionStep } from './last-month-hiv-exposition'
-export { HIVOngoingRiskStep } from './hiv-ongoing-risk'
