@@ -7,7 +7,7 @@ export function SignInPage(): JSX.Element {
   return (
     <SignInForm
       // Configure according to your settings
-      googleClientId="921088377005-3j1sa10vr6hj86jgmdfh2l53v3mp7lfi.apps.googleusercontent.com"
+      googleClientId="687949780985-j6erf2gg0f133rqalukqa3vcf45ltaf2.apps.googleusercontent.com"
       onSuccess={() => navigate('/')}
     >
       <Logo size={32} />
