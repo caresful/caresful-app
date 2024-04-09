@@ -1,5 +1,5 @@
 {
-  "name": "medplum-provider",
+  "name": "@healthcare/provider",
   "version": "3.1.0",
   "private": true,
   "type": "module",
