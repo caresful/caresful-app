@@ -6,7 +6,7 @@ import cx from 'clsx';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import classes from './Header.module.css';
-import { Logo } from './Logo';
+import logo from '../img/homePage/caresful.svg'
 
 const navigation = [
   { name: 'Health Record', href: '/health-record' },
@@ -27,7 +27,8 @@ export function Header(): JSX.Element {
       <Container>
         <div className={classes.inner}>
           <UnstyledButton className={classes.logoButton} onClick={() => navigate('/')}>
-            <Logo width={240} />
+            {/* <Logo width={240} /> */}
+            <img src={logo} alt="Go arrow" width={240} height={30} />
           </UnstyledButton>
           <Group gap={5} className={classes.links}>
             {navigation.map((link) => (

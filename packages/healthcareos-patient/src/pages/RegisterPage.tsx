@@ -13,9 +13,9 @@ export function RegisterPage(): JSX.Element {
           projectId={MEDPLUM_PROJECT_ID}
           googleClientId={MEDPLUM_GOOGLE_CLIENT_ID}
           recaptchaSiteKey={MEDPLUM_RECAPTCHA_SITE_KEY}
-          onSuccess={() => navigate('/')}
+          onSuccess={() => navigate('/onboarding')}
         >
-          <h2>Register with Foo Medical</h2>
+          <h2>Register with Caresful</h2>
         </RegisterForm>
       </Box>
       <BackgroundImage src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1567&amp;q=80" />
