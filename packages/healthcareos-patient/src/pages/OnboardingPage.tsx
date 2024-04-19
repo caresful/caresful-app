@@ -1,4 +1,5 @@
-import { Questionnaire } from '@medplum/fhirtypes';
+import { getReferenceString } from '@medplum/core';
+import { Questionnaire, QuestionnaireResponse } from '@medplum/fhirtypes';
 import { Document, QuestionnaireForm, useMedplum } from '@medplum/react';
 import { useEffect, useState } from 'react';
 
@@ -17,8 +18,12 @@ export function Onboarding(): JSX.Element {
   <Document>
      <QuestionnaireForm
       questionnaire={questionnaire}
-      onSubmit={(formData: any) => {
-        console.log('submit', formData);
+      onSubmit={async(formData: any) => {
+        await medplum.createResource<QuestionnaireResponse>({
+          resourceType: 'QuestionnaireResponse',
+          status: 'completed',
+          questionnaire: getReferenceString(questionnaire),
+        });
       }}
     />
   </Document>
